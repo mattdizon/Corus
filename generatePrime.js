@@ -1,0 +1,23 @@
+const generatePrime = (n) => {
+    let res = []
+    if(n < 2){
+        res.push(-1)
+    }
+    else{
+        for(i = 2; i <= n; i++){
+            if(isPrime(i)){
+                res.push(i)
+            }
+        }
+    }
+    return res
+}
+
+const isPrime = (i) =>{
+    for (let factor = 2; factor < i; factor++){
+        if (i % factor === 0){
+            return false;
+        }
+    }
+    return true;
+}
