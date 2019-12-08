@@ -3,7 +3,7 @@ require 'json'
 require 'date'
 
 def getRecords(ageStart, ageEnd, bpdiff)
-    current_year = Date.today.year
+    current_year = DateTime.strptime("1318996912",'%s').year()
     ids = []
     uri = ("https://jsonmock.hackerrank.com/api/medical_records")
     resp = Net::HTTP.get_response(URI.parse(uri))
@@ -16,3 +16,4 @@ def getRecords(ageStart, ageEnd, bpdiff)
     end
     data
 end
+

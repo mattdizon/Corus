@@ -10,6 +10,9 @@ const generatePrime = (n) => {
             }
         }
     }
+    for(let i = 0; i < res.length; i++){
+        console.log(res[i])
+    }
     return res
 }
 
