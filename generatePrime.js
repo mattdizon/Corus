@@ -1,4 +1,5 @@
-const generatePrime = (n) => {
+let primes = {};
+primes.generatePrime = (n) => {
     let res = []
     if(n < 2){
         res.push(-1)
@@ -24,4 +25,4 @@ const isPrime = (i) =>{
     }
     return true;
 }
-generatePrime(20)
+module.exports = primes;
