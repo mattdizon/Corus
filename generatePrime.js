@@ -24,3 +24,4 @@ const isPrime = (i) =>{
     }
     return true;
 }
+generatePrime(20)
